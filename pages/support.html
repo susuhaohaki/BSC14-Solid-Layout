@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font inter google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- flowbite css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- slick-carousel  -->
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <!-- ANIMATION CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- main css -->
+    <link href="../css/home-output.css" rel="stylesheet" />
+    <title>Solid layout</title>
+  </head>
+  <body id="body">
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <div class="navbar__container">
+          <div class="navbar__brand">
+            <a href="../index.html">
+              <img src="../img/logo-light.svg" alt="" class="dark:hidden" />
+              <img
+                src="../img/logo-dark.svg"
+                alt=""
+                class="dark:block hidden"
+              />
+            </a>
+          </div>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-[30] h-[30px] justify-center text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="navbar__content dark:bg-dark hidden" id="navbar-default">
+            <div class="navbar__menu">
+              <ul>
+                <li><a href="../index.html"> Home</a></li>
+                <li><a href="../index.html#features">Features</a></li>
+
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">Docs</a></li>
+                <li class="relative">
+                  <button
+                    id="dropdownNavbarLink"
+                    class="dark:bg-dark"
+                    data-dropdown-toggle="dropdownNavbar"
+                  >
+                    <a href="#!"
+                      >Pages
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar" class="z-10 hidden">
+                    <ul
+                      aria-labelledby="dropdownLargeButton"
+                      class="dropdown__menuItem"
+                    >
+                      <li>
+                        <a href="#">Blog Grid</a>
+                      </li>
+                      <li>
+                        <a href="./signIn.html">Sign In</a>
+                      </li>
+                      <li>
+                        <a href="./signUp.html">Sign Up</a>
+                      </li>
+                      <li>
+                        <a href="#">Docs</a>
+                      </li>
+                      <li>
+                        <a href="./support.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="./page404.html">404</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./support.html">Support</a></li>
+              </ul>
+            </div>
+            <div class="navbar__controls">
+              <div class="icon__search">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_369_1884)">
+                    <path
+                      d="M16.9347 15.3963L12.4816 11.7799C14.3168 9.26991 14.1279 5.68042 11.8338 3.41337C10.6194 2.19889 9.00003 1.52417 7.27276 1.52417C5.54549 1.52417 3.92617 2.19889 2.71168 3.41337C0.201738 5.92332 0.201738 10.0256 2.71168 12.5355C3.92617 13.75 5.54549 14.4247 7.27276 14.4247C8.91907 14.4247 10.4574 13.804 11.6719 12.6975L16.179 16.3409C16.287 16.4219 16.4219 16.4759 16.5569 16.4759C16.7458 16.4759 16.9077 16.3949 17.0157 16.26C17.2316 15.9901 17.2046 15.6122 16.9347 15.3963ZM7.27276 13.2102C5.86935 13.2102 4.5739 12.6705 3.57532 11.6719C1.52418 9.62076 1.52418 6.30116 3.57532 4.27701C4.5739 3.27843 5.86935 2.73866 7.27276 2.73866C8.67617 2.73866 9.97162 3.27843 10.9702 4.27701C13.0213 6.32815 13.0213 9.64775 10.9702 11.6719C9.99861 12.6705 8.67617 13.2102 7.27276 13.2102Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_369_1884">
+                      <rect
+                        width="17.2727"
+                        height="17.2727"
+                        fill="white"
+                        transform="translate(0.363647 0.363647)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="navbar__control-right">
+                <div class="navbar__account">
+                  <a href="./signIn.html" class="font-medium">Sign In</a>
+                  <a href="./signUp.html">Sign Up</a>
+                </div>
+                <div class="xl:mr-[6px] cursor-pointer" id="toggleDark">
+                  <img src="../img/icon-moon.svg" alt="" />
+                </div>
+                <div class="hidden xl:mr-[6px] cursor-pointer" id="toggleLight">
+                  <img src="../img/icon-sun.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- SUPPORT  -->
+    <section class="support pt-40 pb-20">
+      <div class="support__container">
+        <div
+          class="absolute left-0 top-0 -z-10 h-2/3 w-full rounded-lg bg-gradient-to-t from-[#fff] to-[#dee7ff47] dark:bg-gradient-to-t dark:from-transparent dark:to-[#24283E]"
+        ></div>
+        <div class="absolute bottom-[-255px] left-0 -z-10 h-full w-full">
+          <img
+            alt="Dotted"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="dark:hidden"
+            src="../img/shape-dotted-light.svg"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              inset: 0px;
+              color: transparent;
+            "
+          /><img
+            alt="Dotted"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="hidden dark:block"
+            src="../img/shape-dotted-dark.svg"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              inset: 0px;
+              color: transparent;
+            "
+          />
+        </div>
+        <div class="support__content">
+          <div class="support__content-left animate-left">
+            <h2>Send a message</h2>
+            <form action="https://formbold.com/s/unique_form_id" method="POST">
+              <div
+                class="mb-[1.875rem] flex flex-col gap-[1.875rem] lg:flex-row lg:justify-between lg:gap-[3.5rem]"
+              >
+                <input
+                  placeholder="Full name"
+                  class="w-full border-b border-stroke bg-transparent pb-[0.875rem] focus:border-[#757693] focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-[#999aa1] dark:focus:placeholder:text-white lg:w-1/2"
+                  type="text"
+                /><input
+                  placeholder="Email address"
+                  class="w-full border-b border-stroke bg-transparent pb-[0.875rem] focus:border-[#757693] focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-[#999aa1] dark:focus:placeholder:text-white lg:w-1/2"
+                  type="email"
+                />
+              </div>
+              <div
+                class="mb-[3.125rem] flex flex-col gap-[1.875rem] lg:flex-row lg:justify-between lg:gap-[3.5rem]"
+              >
+                <input
+                  placeholder="Subject"
+                  class="w-full border-b border-stroke bg-transparent pb-[0.875rem] focus:border-[#757693] focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-[#999aa1] dark:focus:placeholder:text-white lg:w-1/2"
+                  type="text"
+                /><input
+                  placeholder="Phone number"
+                  class="w-full border-b border-stroke bg-transparent pb-[0.875rem] focus:border-[#757693] focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-[#999aa1] dark:focus:placeholder:text-white lg:w-1/2"
+                  type="text"
+                />
+              </div>
+              <div class="mb-[2.875rem] flex">
+                <textarea
+                  placeholder="Message"
+                  rows="4"
+                  class="w-full border-b border-stroke bg-transparent focus:border-[#757693] focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-[#999aa1] dark:focus:placeholder:text-white"
+                ></textarea>
+              </div>
+              <div class="flex flex-wrap gap-4 xl:justify-between">
+                <div class="mb-4 flex md:mb-0">
+                  <label
+                    for="default-checkbox"
+                    class="flex max-w-[425px] cursor-pointer select-none"
+                    ><input
+                      id="default-checkbox"
+                      class="peer sr-only"
+                      type="checkbox"
+                    /><span
+                      class="group mt-2 mr-2 flex h-5 min-w-[20px] items-center justify-center rounded border-gray-300 bg-gray-100 text-blue-600 peer-checked:bg-primary dark:border-gray-600 dark:bg-gray-700"
+                      ><svg
+                        class="opacity-0 peer-checked:group-[]:opacity-100"
+                        width="10"
+                        height="8"
+                        viewBox="0 0 10 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.70704 0.792787C9.89451 0.980314 9.99983 1.23462 9.99983 1.49979C9.99983 1.76495 9.89451 2.01926 9.70704 2.20679L4.70704 7.20679C4.51951 7.39426 4.26521 7.49957 4.00004 7.49957C3.73488 7.49957 3.48057 7.39426 3.29304 7.20679L0.293041 4.20679C0.110883 4.01818 0.0100885 3.76558 0.0123669 3.50339C0.0146453 3.24119 0.119814 2.99038 0.305222 2.80497C0.490631 2.61956 0.741443 2.51439 1.00364 2.51211C1.26584 2.50983 1.51844 2.61063 1.70704 2.79279L4.00004 5.08579L8.29304 0.792787C8.48057 0.605316 8.73488 0.5 9.00004 0.5C9.26521 0.5 9.51951 0.605316 9.70704 0.792787Z"
+                          fill="white"
+                        ></path></svg></span
+                    >By clicking Checkbox, you agree to use our “Form” terms And
+                    consent cookie usage in browser.</label
+                  >
+                </div>
+                <a
+                  href="#!"
+                  class="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-[#2c3149] dark:bg-btndark"
+                >
+                  Send Message<svg
+                    class="fill-white"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </form>
+          </div>
+          <div class="support__content-right animate-right">
+            <h3>Find us</h3>
+            <div class="mb-7">
+              <h4>Our Loaction</h4>
+              <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+            </div>
+            <div class="mb-7">
+              <h4>Email Address</h4>
+              <p><a href="#!">yourmail@domainname.com</a></p>
+            </div>
+            <div>
+              <h4>Phone Number</h4>
+              <p><a href="#!">+009 42334 6343 843</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__content">
+            <div class="footer__content-left wow animate-top">
+              <a href="../index.html">
+                <img src="../img/logo-light.svg" alt="" class="dark:hidden" />
+                <img
+                  src="../img/logo-dark.svg"
+                  alt=""
+                  class="hidden dark:block"
+                />
+              </a>
+              <p class="mb-10 mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p
+                class="mb-1.5 text-[14px] leading-[22px] uppercase tracking-[5px]"
+              >
+                contact
+              </p>
+              <a
+                href="#"
+                class="text-[26px] leading-[32px] font-medium text-black dark:text-white"
+                >hello@solid.com</a
+              >
+            </div>
+            <div class="footer__content-right">
+              <div class="wow animate-top">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#!">Home</a></li>
+                  <li><a href="#!">Product</a></li>
+                  <li><a href="#!">Careers</a></li>
+                  <li><a href="#!">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="wow animate-top">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#!">Company</a></li>
+                  <li><a href="#!">Press media</a></li>
+                  <li><a href="#!">Our Blog</a></li>
+                  <li><a href="#!">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="wow animate-top">
+                <h4>Newsletter</h4>
+                <p class="mb-4 w-[90%]">Subscribe to receive future updates</p>
+                <div class="relative">
+                  <input
+                    placeholder="Email address"
+                    type="email"
+                    class="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-[#006bff] focus:outline-none dark:border-strokedark dark:bg-[#181c31] dark:shadow-none dark:focus:border-[#066bff]"
+                  />
+                  <div class="absolute right-0 p-4 inline-block">
+                    <svg
+                      class="fill-[#757693] hover:fill-primary dark:fill-white"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_48_1487)">
+                        <path
+                          d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                          fill=""
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_48_1487">
+                          <rect width="20" height="20" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="wow animate-top">
+            <ul class="flex items-center gap-8">
+              <li><a href="#!" class="hover:text-[#006bff]">English</a></li>
+              <li>
+                <a href="#!" class="hover:text-[#006bff]">Privacy Policy</a>
+              </li>
+              <li><a href="#!" class="hover:text-[#006bff]">Support</a></li>
+            </ul>
+          </div>
+          <div class="wow animate-top">
+            <p>© 2024 Solid. All rights reserved</p>
+          </div>
+          <div class="wow animate-top">
+            <ul class="flex items-center gap-5">
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-behance"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- BACK TO TOP  -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top"
+      ><i class="fa-sharp fa-thin fa-angle-up"></i
+    ></a>
+    <!-- JQUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- waypoin js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- flowbite script  -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- BACK TO TOP JS -->
+    <script src="../js/util.js"></script>
+    <script src="../js/main_BackToTop.js"></script>
+    <!-- WOW JS -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- index.js  -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

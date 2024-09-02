@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font inter google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-09b459cf485d4b1f3304947240314c05.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- flowbite css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- slick-carousel  -->
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <!-- ANIMATION CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- main css -->
+    <link href="../css/home-output.css" rel="stylesheet" />
+    <title>Sign Up</title>
+  </head>
+  <body id="body">
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <div class="navbar__container">
+          <div class="navbar__brand">
+            <a href="../index.html">
+              <img src="../img/logo-light.svg" alt="" class="dark:hidden" />
+              <img
+                src="../img/logo-dark.svg"
+                alt=""
+                class="dark:block hidden"
+              />
+            </a>
+          </div>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-[30] h-[30px] justify-center text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="navbar__content dark:bg-dark hidden" id="navbar-default">
+            <div class="navbar__menu">
+              <ul>
+                <li><a href="../index.html"> Home</a></li>
+                <li><a href="../index.html#features">Features</a></li>
+
+                <li><a href="#!">Blog</a></li>
+                <li><a href="#!">Docs</a></li>
+                <li class="relative">
+                  <button
+                    id="dropdownNavbarLink"
+                    class="dark:bg-dark"
+                    data-dropdown-toggle="dropdownNavbar"
+                  >
+                    <a href="#!"
+                      >Pages
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                  </button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar" class="z-10 hidden">
+                    <ul
+                      aria-labelledby="dropdownLargeButton"
+                      class="dropdown__menuItem"
+                    >
+                      <li>
+                        <a href="#">Blog Grid</a>
+                      </li>
+                      <li>
+                        <a href="./signIn.html">Sign In</a>
+                      </li>
+                      <li>
+                        <a href="./signUp.html">Sign Up</a>
+                      </li>
+                      <li>
+                        <a href="#">Docs</a>
+                      </li>
+                      <li>
+                        <a href="./support.html">Support</a>
+                      </li>
+                      <li>
+                        <a href="./page404.html">404</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="./support.html">Support</a></li>
+              </ul>
+            </div>
+            <div class="navbar__controls">
+              <div class="icon__search">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 18 18"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_369_1884)">
+                    <path
+                      d="M16.9347 15.3963L12.4816 11.7799C14.3168 9.26991 14.1279 5.68042 11.8338 3.41337C10.6194 2.19889 9.00003 1.52417 7.27276 1.52417C5.54549 1.52417 3.92617 2.19889 2.71168 3.41337C0.201738 5.92332 0.201738 10.0256 2.71168 12.5355C3.92617 13.75 5.54549 14.4247 7.27276 14.4247C8.91907 14.4247 10.4574 13.804 11.6719 12.6975L16.179 16.3409C16.287 16.4219 16.4219 16.4759 16.5569 16.4759C16.7458 16.4759 16.9077 16.3949 17.0157 16.26C17.2316 15.9901 17.2046 15.6122 16.9347 15.3963ZM7.27276 13.2102C5.86935 13.2102 4.5739 12.6705 3.57532 11.6719C1.52418 9.62076 1.52418 6.30116 3.57532 4.27701C4.5739 3.27843 5.86935 2.73866 7.27276 2.73866C8.67617 2.73866 9.97162 3.27843 10.9702 4.27701C13.0213 6.32815 13.0213 9.64775 10.9702 11.6719C9.99861 12.6705 8.67617 13.2102 7.27276 13.2102Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_369_1884">
+                      <rect
+                        width="17.2727"
+                        height="17.2727"
+                        fill="white"
+                        transform="translate(0.363647 0.363647)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="navbar__control-right">
+                <div class="navbar__account">
+                  <a href="./signIn.html" class="font-medium">Sign In</a>
+                  <a href="./signUp.html">Sign Up</a>
+                </div>
+                <div class="xl:mr-[6px] cursor-pointer" id="toggleDark">
+                  <img src="../img/icon-moon.svg" alt="" />
+                </div>
+                <div class="hidden xl:mr-[6px] cursor-pointer" id="toggleLight">
+                  <img src="../img/icon-sun.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="pb-12.5 pt-32.5 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
+      <div
+        class="relative z-1 mx-auto max-w-[1016px] px-7.5 pb-7.5 pt-10 lg:px-15 lg:pt-15 xl:px-20 xl:pt-20"
+      >
+        <div
+          class="absolute left-0 top-0 -z-1 h-2/3 w-full rounded-lg bg-gradient-to-t from-transparent to-[#dee7ff47] dark:bg-gradient-to-t dark:to-[#252A42]"
+        ></div>
+        <div class="absolute bottom-17.5 left-0 -z-1 h-1/3 w-full">
+          <img
+            alt="Dotted"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="dark:hidden"
+            src="../img/shape-dotted-light.svg"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              inset: 0px;
+              color: transparent;
+            "
+          /><img
+            alt="Dotted"
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
+            class="hidden dark:block"
+            src="../img/shape-dotted-dark.svg"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              inset: 0px;
+              color: transparent;
+            "
+          />
+        </div>
+        <section
+          class="animate-top rounded-lg bg-white px-7.5 pt-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-dark xl:px-15 xl:pt-15"
+          style="opacity: 1; transform: none"
+        >
+          <h2
+            class="mb-15 text-center text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2"
+          >
+            Login to Your Account
+          </h2>
+          <div
+            class="mx-auto mb-12.5 flex w-3/6 flex-col items-center justify-center gap-1 rounded-lg border border-stroke p-1 dark:border-strokedark md:flex-row"
+          >
+            <button
+              id="magicLink"
+              class="w-full rounded-lg px-6 py-3 text-base outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none border bg-primary/5 text-primary dark:border-primary dark:bg-primary/5"
+            >
+              Magic Link</button
+            ><button
+              id="password"
+              class="w-full rounded-lg px-6 py-3 text-base outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
+            >
+              Password
+            </button>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex flex-col items-center md:flex-row md:gap-8">
+              <button
+                aria-label="sign with google"
+                class="mb-3 flex w-full items-center justify-center rounded-lg border border-stroke px-6 py-3 text-base outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none md:mb-6"
+              >
+                <span class="mr-3"
+                  ><svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_95:967)">
+                      <path
+                        d="M20.0001 10.2216C20.0122 9.53416 19.9397 8.84776 19.7844 8.17725H10.2042V11.8883H15.8277C15.7211 12.539 15.4814 13.1618 15.1229 13.7194C14.7644 14.2769 14.2946 14.7577 13.7416 15.1327L13.722 15.257L16.7512 17.5567L16.961 17.5772C18.8883 15.8328 19.9997 13.266 19.9997 10.2216"
+                        fill="#4285F4"
+                      ></path>
+                      <path
+                        d="M10.2042 20.0001C12.9592 20.0001 15.2721 19.1111 16.9616 17.5778L13.7416 15.1332C12.88 15.7223 11.7235 16.1334 10.2042 16.1334C8.91385 16.126 7.65863 15.7206 6.61663 14.9747C5.57464 14.2287 4.79879 13.1802 4.39915 11.9778L4.27957 11.9878L1.12973 14.3766L1.08856 14.4888C1.93689 16.1457 3.23879 17.5387 4.84869 18.512C6.45859 19.4852 8.31301 20.0005 10.2046 20.0001"
+                        fill="#34A853"
+                      ></path>
+                      <path
+                        d="M4.39911 11.9777C4.17592 11.3411 4.06075 10.673 4.05819 9.99996C4.0623 9.32799 4.17322 8.66075 4.38696 8.02225L4.38127 7.88968L1.19282 5.4624L1.08852 5.51101C0.372885 6.90343 0.00012207 8.4408 0.00012207 9.99987C0.00012207 11.5589 0.372885 13.0963 1.08852 14.4887L4.39911 11.9777Z"
+                        fill="#FBBC05"
+                      ></path>
+                      <path
+                        d="M10.2042 3.86663C11.6663 3.84438 13.0804 4.37803 14.1498 5.35558L17.0296 2.59996C15.1826 0.901848 12.7366 -0.0298855 10.2042 -3.6784e-05C8.3126 -0.000477834 6.45819 0.514732 4.8483 1.48798C3.2384 2.46124 1.93649 3.85416 1.08813 5.51101L4.38775 8.02225C4.79132 6.82005 5.56974 5.77231 6.61327 5.02675C7.6568 4.28118 8.91279 3.87541 10.2042 3.86663Z"
+                        fill="#EB4335"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_95:967">
+                        <rect width="20" height="20" fill="white"></rect>
+                      </clipPath>
+                    </defs></svg></span
+                >Signup with Google</button
+              ><button
+                aria-label="signup with github"
+                class="mb-6 flex w-full items-center justify-center rounded-lg border border-stroke px-6 py-3 text-base outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
+              >
+                <span class="mr-3"
+                  ><svg
+                    fill="currentColor"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M32 1.7998C15 1.7998 1 15.5998 1 32.7998C1 46.3998 9.9 57.9998 22.3 62.1998C23.9 62.4998 24.4 61.4998 24.4 60.7998C24.4 60.0998 24.4 58.0998 24.3 55.3998C15.7 57.3998 13.9 51.1998 13.9 51.1998C12.5 47.6998 10.4 46.6998 10.4 46.6998C7.6 44.6998 10.5 44.6998 10.5 44.6998C13.6 44.7998 15.3 47.8998 15.3 47.8998C18 52.6998 22.6 51.2998 24.3 50.3998C24.6 48.3998 25.4 46.9998 26.3 46.1998C19.5 45.4998 12.2 42.7998 12.2 30.9998C12.2 27.5998 13.5 24.8998 15.4 22.7998C15.1 22.0998 14 18.8998 15.7 14.5998C15.7 14.5998 18.4 13.7998 24.3 17.7998C26.8 17.0998 29.4 16.6998 32.1 16.6998C34.8 16.6998 37.5 16.9998 39.9 17.7998C45.8 13.8998 48.4 14.5998 48.4 14.5998C50.1 18.7998 49.1 22.0998 48.7 22.7998C50.7 24.8998 51.9 27.6998 51.9 30.9998C51.9 42.7998 44.6 45.4998 37.8 46.1998C38.9 47.1998 39.9 49.1998 39.9 51.9998C39.9 56.1998 39.8 59.4998 39.8 60.4998C39.8 61.2998 40.4 62.1998 41.9 61.8998C54.1 57.7998 63 46.2998 63 32.5998C62.9 15.5998 49 1.7998 32 1.7998Z"
+                    ></path></svg></span
+                >Signup with Github
+              </button>
+            </div>
+          </div>
+          <div class="mb-10 flex items-center justify-center">
+            <span
+              class="hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-strokedark sm:block"
+            ></span>
+            <p class="w-full px-5 text-center text-base">OR</p>
+            <span
+              class="hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-strokedark sm:block"
+            ></span>
+          </div>
+          <form class="">
+            <div>
+              <input
+                placeholder="Email"
+                class="w-full border-b border-t-0 border-r-0 border-l-0 border-stroke !bg-white pb-3.5 focus:border-b-waterloo focus:placeholder:text-black focus:outline-none focus:ring-0 dark:border-strokedark dark:!bg-dark dark:focus:border-manatee dark:focus:placeholder:text-white"
+                type="email"
+                value=""
+              />
+              <div>
+                <button
+                  aria-label="login with email and password"
+                  class="mx-auto mt-6 flex items-center justify-center rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                >
+                  Send Magic Link<svg
+                    class="ml-2.5 fill-white"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="mt-12.5 border-t border-stroke py-5 text-center dark:border-strokedark"
+            >
+              <p>
+                Don't have an account?
+                <a
+                  class="text-black hover:text-primary dark:text-white hover:dark:text-primary"
+                  href="./signIn.html"
+                  >Sign In</a
+                >
+              </p>
+            </div>
+          </form>
+          <form class="hidden">
+            <div
+              class="mb-7.5 flex flex-col gap-7.5 lg:mb-12.5 lg:flex-row lg:justify-between lg:gap-14"
+            >
+              <input
+                placeholder="First name"
+                class="w-full border-b border-l-0 border-t-0 border-r-0 border-stroke !bg-white pb-3.5 focus:border-waterloo focus:placeholder:text-black focus:outline-none focus:ring-0 dark:border-strokedark dark:!bg-dark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                type="text"
+                value=""
+              />
+
+              <input
+                placeholder="Last Name"
+                class="w-full border-b border-l-0 border-t-0 border-r-0 border-stroke !bg-white pb-3.5 focus:border-waterloo focus:placeholder:text-black focus:outline-none focus:ring-0 dark:border-strokedark dark:!bg-dark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="mb-7.5 flex flex-col gap-7.5 lg:mb-12.5 lg:flex-row lg:justify-between lg:gap-14"
+            >
+              <input
+                placeholder="Email address"
+                class="w-full border-b border-l-0 border-t-0 border-r-0 border-stroke !bg-white pb-3.5 focus:border-waterloo focus:placeholder:text-black focus:outline-none focus:ring-0 dark:border-strokedark dark:!bg-dark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                type="email"
+                value=""
+              />
+
+              <input
+                placeholder="Password"
+                class="w-full border-b border-l-0 border-t-0 border-r-0 border-stroke !bg-white pb-3.5 focus:border-waterloo focus:placeholder:text-black focus:outline-none focus:ring-0 dark:border-strokedark dark:!bg-dark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              class="flex flex-wrap items-center gap-10 md:justify-between xl:gap-15"
+            >
+              <div class="flex flex-wrap gap-4 md:gap-10">
+                <div class="flex items-center">
+                  <label
+                    for="default-checkbox"
+                    class="flex max-w-[425px] cursor-pointer select-none"
+                    ><input
+                      id="default-checkbox"
+                      class="peer sr-only"
+                      type="checkbox"
+                    /><span
+                      class="group mr-1 mt-1 flex h-5 min-w-[20px] items-center justify-center rounded border-gray-300 bg-gray-100 text-blue-600 peer-checked:bg-primary dark:border-gray-600 dark:bg-gray-700"
+                      ><svg
+                        class="opacity-0 peer-checked:group-[]:opacity-100"
+                        width="10"
+                        height="8"
+                        viewBox="0 0 10 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.70704 0.792787C9.89451 0.980314 9.99983 1.23462 9.99983 1.49979C9.99983 1.76495 9.89451 2.01926 9.70704 2.20679L4.70704 7.20679C4.51951 7.39426 4.26521 7.49957 4.00004 7.49957C3.73488 7.49957 3.48057 7.39426 3.29304 7.20679L0.293041 4.20679C0.110883 4.01818 0.0100885 3.76558 0.0123669 3.50339C0.0146453 3.24119 0.119814 2.99038 0.305222 2.80497C0.490631 2.61956 0.741443 2.51439 1.00364 2.51211C1.26584 2.50983 1.51844 2.61063 1.70704 2.79279L4.00004 5.08579L8.29304 0.792787C8.48057 0.605316 8.73488 0.5 9.00004 0.5C9.26521 0.5 9.51951 0.605316 9.70704 0.792787Z"
+                          fill="white"
+                        ></path></svg></span
+                    >Keep me signed in</label
+                  >
+                </div>
+              </div>
+              <button
+                aria-label="login with email and password"
+                class="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+              >
+                Create Account<svg
+                  class="fill-white"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z"
+                    fill=""
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="mt-12.5 border-t border-stroke py-5 text-center dark:border-strokedark"
+            >
+              <p>
+                Already have an account?
+                <a
+                  class="text-black hover:text-primary dark:text-white hover:dark:text-primary"
+                  href="./signIn.html"
+                  >SignIn</a
+                >
+              </p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__content">
+            <div class="footer__content-left wow animate-top">
+              <a href="../index.html">
+                <img src="../img/logo-light.svg" alt="" class="dark:hidden" />
+                <img
+                  src="../img/logo-dark.svg"
+                  alt=""
+                  class="hidden dark:block"
+                />
+              </a>
+              <p class="mb-10 mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p
+                class="mb-1.5 text-[14px] leading-[22px] uppercase tracking-[5px]"
+              >
+                contact
+              </p>
+              <a
+                href="#"
+                class="text-[26px] leading-[32px] font-medium text-black dark:text-white"
+                >hello@solid.com</a
+              >
+            </div>
+            <div class="footer__content-right">
+              <div class="wow animate-top">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#!">Home</a></li>
+                  <li><a href="#!">Product</a></li>
+                  <li><a href="#!">Careers</a></li>
+                  <li><a href="#!">Pricing</a></li>
+                </ul>
+              </div>
+              <div class="wow animate-top">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="#!">Company</a></li>
+                  <li><a href="#!">Press media</a></li>
+                  <li><a href="#!">Our Blog</a></li>
+                  <li><a href="#!">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="wow animate-top">
+                <h4>Newsletter</h4>
+                <p class="mb-4 w-[90%]">Subscribe to receive future updates</p>
+                <div class="relative">
+                  <input
+                    placeholder="Email address"
+                    type="email"
+                    class="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-[#006bff] focus:outline-none dark:border-strokedark dark:bg-[#181c31] dark:shadow-none dark:focus:border-[#066bff]"
+                  />
+                  <div class="absolute right-0 p-4 inline-block">
+                    <svg
+                      class="fill-[#757693] hover:fill-primary dark:fill-white"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_48_1487)">
+                        <path
+                          d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                          fill=""
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_48_1487">
+                          <rect width="20" height="20" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="wow animate-top">
+            <ul class="flex items-center gap-8">
+              <li><a href="#!" class="hover:text-[#006bff]">English</a></li>
+              <li>
+                <a href="#!" class="hover:text-[#006bff]">Privacy Policy</a>
+              </li>
+              <li><a href="#!" class="hover:text-[#006bff]">Support</a></li>
+            </ul>
+          </div>
+          <div class="wow animate-top">
+            <p>© 2024 Solid. All rights reserved</p>
+          </div>
+          <div class="wow animate-top">
+            <ul class="flex items-center gap-5">
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </li>
+              <li
+                class="text-[#D1D8E0] transition-all duration-300 hover:text-[#006bff]"
+              >
+                <i class="fa-brands fa-behance"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- BACK TO TOP  -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top"
+      ><i class="fa-sharp fa-thin fa-angle-up"></i
+    ></a>
+    <!-- JQUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- waypoin js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- flowbite script  -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- BACK TO TOP JS -->
+    <script src="../js/util.js"></script>
+    <script src="../js/main_BackToTop.js"></script>
+    <!-- WOW JS -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- index.js  -->
+    <script src="../js/index.js"></script>
+    <script>
+      let elementBtnMagicLink = document.getElementById("magicLink");
+      let elementBtnPassword = document.getElementById("password");
+
+      elementBtnMagicLink.onclick = function () {
+        elementBtnMagicLink.classList.add(
+          "border",
+          "bg-primary/5",
+          "text-primary",
+          "dark:border-primary",
+          "dark:bg-primary/5"
+        );
+        document
+          .querySelector("#body > section > div > section > form:nth-child(6)")
+          .classList.add("hidden");
+        document
+          .querySelector("#body > section > div > section > form:nth-child(5)")
+          .classList.remove("hidden");
+        elementBtnPassword.classList.remove(
+          "border",
+          "bg-primary/5",
+          "text-primary",
+          "dark:border-primary",
+          "dark:bg-primary/5"
+        );
+      };
+
+      elementBtnPassword.onclick = function () {
+        document
+          .querySelector("#body > section > div > section > form:nth-child(6)")
+          .classList.remove("hidden");
+        document
+          .querySelector("#body > section > div > section > form:nth-child(5)")
+          .classList.add("hidden");
+        elementBtnMagicLink.classList.remove(
+          "border",
+          "bg-primary/5",
+          "text-primary",
+          "dark:border-primary",
+          "dark:bg-primary/5"
+        );
+        elementBtnPassword.classList.add(
+          "border",
+          "bg-primary/5",
+          "text-primary",
+          "dark:border-primary",
+          "dark:bg-primary/5"
+        );
+      };
+    </script>
+  </body>
+</html>
