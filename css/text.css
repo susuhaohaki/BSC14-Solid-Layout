@@ -1,0 +1,20 @@
+@media (min-width: 1280px) {
+  .navbar__menu #dropdownNavbar::before {
+    content: " ";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-style: solid;
+    @apply border-gray-200;
+    background-color: #fff;
+    top: -0.375rem;
+    left: 2.5rem;
+    rotate: 45deg;
+    z-index: 1;
+  }
+  .navbar__menu #dropdownNavbar {
+    inset: 16px auto auto 59px !important;
+  }
+}
